@@ -1,4 +1,4 @@
-const User = require("../models/UserModel")
+const User = require("../models/userModel")
 
 const getUsers = async(req, res)=>{
     const users = await User.find({role: "user"}).select('-password')
