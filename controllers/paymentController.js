@@ -20,8 +20,8 @@ const makePayment = async(req, res)=>{
             payment_method_types:["card"],
             line_items: lineItems,
             mode:"payment",
-            success_url:"http://localhost:5173/cart/?clearCart=true",
-            cancel_url:"http://localhost:5173/canceled"
+            success_url:"http://pacific.smartegbuchulem.co/cart/?clearCart=true",
+            cancel_url:"http://pacific.smartegbuchulem.co/canceled"
         })
 
         const orderResult = await createOrder(userId, products);
